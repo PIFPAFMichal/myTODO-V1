@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[data-mode=light] {
+  color: #313130;
+  p: #313130;
+}
+[data-mode=light] .home__tools-item-button {
+  background-color: #313130;
+  color: white;
+}
+[data-mode=light] .todo__heading-txt {
+  color: white;
+}
+[data-mode=light] body {
+  background: #dbdede;
+}
+
+[data-mode=dark] {
+  background: #282828;
+  color: #dbdede;
+  p: #dbdede;
+}
+[data-mode=dark] .home__tools-item-button {
+  background-color: #dbdede;
+  color: black;
+}
+[data-mode=dark] .todo__heading-txt {
+  color: black;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  font-family: "Saira", sans-serif;
+  background-color: #dbdede;
+  overflow-x: hidden;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+.home__heading {
+  height: 20vh;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-top: 3em;
+  padding: 1em;
+}
+.home__tools {
+  margin: 4em;
+  padding: 1em;
+}
+.home__tools-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 4em;
+  padding: 1em;
+  list-style: none;
+}
+.home__tools-item-button {
+  border: none;
+  background-color: #dbdede;
+  color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  margin: 1em;
+  padding: 1em 2em;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 4em;
+}
+.todo__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 200px;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 1.4px 1.9px 2.9px black;
+  background: #bdc3c7;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  margin: 0.1em 0;
+  color: white;
+}
+.todo__heading-input {
+  width: 400px;
+}
+.todo__content {
+  min-width: 650px;
+  max-width: 800px;
+  min-height: 800px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 1.4px 1.9px 2.9px black;
+}
+.todo__content--heading {
+  padding: 1em 0;
+  text-align: center;
+}
+.todo__content--ul {
+  font-size: 1rem;
+  padding: 0.5em;
+  list-style: none;
+}
+.todo__content--li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+.todo__content-tools {
+  display: inline-block;
+  display: flex;
+}
+.todo__content-tools-button--ok {
+  margin: 0.1em;
+  padding: 0.5em 1em;
+  border: none;
+  background: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+.todo__content-tools-button--edit {
+  margin: 0.1em;
+  padding: 0.5em 1em;
+  border: none;
+  background: #9a9a1c;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+.todo__content-tools-button--delete {
+  margin: 0.1em;
+  padding: 0.5em 1em;
+  border: none;
+  background: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+.todo__edit-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.go-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.go-back a {
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

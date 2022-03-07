@@ -1,0 +1,45 @@
+<section class="home">
+    <div class="home">
+        <p class="home__heading">Aplikcja TODO</p>
+    </div>
+    <div class="home__tools">
+        <ul class="home__tools-list">
+            <li class="home__tools-item"><button class="home__tools-item-button size-up">A+</button></li>
+            <li class="home__tools-item"><button class="home__tools-item-button size-down">A-</button></li>
+            <li class="home__tools-item"><button class="home__tools-item-button contrast">Kontrast</button></li>
+        </ul>
+    </div>
+</section>
+
+<section class="todo">
+    <div class="todo__heading">
+            <p class="todo__heading-txt">Zrób to dziś</p>
+        <form action="/add"method="POST">
+            <label class="todo__heading-label">
+                <input class="todo__heading-input" name="taskTodo" type="text" placeholder="Dodaj zadanie">
+            </label>
+            <button>Zapisz</button>
+        </form>
+    </div>
+    <div class="todo__content">
+        <h2 class="todo__content--heading">Lista zadań</h2>
+        <hr>
+        <ul class="todo__content--ul test">
+            {{#each todoList}}
+                <li class="todo__content--li test">
+                    {{this.taskTodo}}
+                    <div class="todo__content-tools">
+                        <button class="todo__content-tools-button--ok">OK</button>
+                        <form action="/edit/{{id}}" method="POST">
+                            <button type="submit" class="todo__content-tools-button--edit">EDIT</button>
+                        </form>
+                        <form action="/delete/{{id}}?_method=DELETE" method="POST">
+                            <button type="submit" class="todo__content-tools-button--delete">DELETE</button>
+                        </form>
+
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

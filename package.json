@@ -1,0 +1,31 @@
+{
+  "name": "moja-todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "../../../Desktop/Moja TODOList Kopia/node_modules/.bin/ts-node index.ts",
+    "start:dev": "../../../Desktop/Moja TODOList Kopia/node_modules/.bin/tsnd index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/method-override": "^0.0.32",
+    "@types/node": "^17.0.18",
+    "ts-node": "^10.5.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "express-handlebars": "^6.0.2",
+    "method-override": "^3.0.0",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
+  }
+}

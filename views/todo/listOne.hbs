@@ -1,0 +1,42 @@
+<section class="home">
+    <div class="home">
+        <p class="home__heading">Aplikcja TODO</p>
+    </div>
+    <div class="home__tools">
+        <ul class="home__tools-list">
+            <li class="home__tools-item"><button class="home__tools-item-button size-up">A+</button></li>
+            <li class="home__tools-item"><button class="home__tools-item-button size-down">A-</button></li>
+            <li class="home__tools-item"><button class="home__tools-item-button contrast">Kontrast</button></li>
+        </ul>
+    </div>
+</section>
+<section class="todo">
+    <div class="todo__heading">
+        <p class="todo__heading-txt">Zrób to dziś</p>
+
+    </div>
+    <div class="todo__content">
+        <h2 class="todo__content--heading">Edytuj poniższe zadanie</h2>
+        <hr>
+        <div class="todo__edit-task">
+        <ul class="todo__content--ul">
+
+            <form action="/update/{{todo.id}}?_method=PATCH" method="POST">
+                <label class="todo__heading-label">
+                    <input class="todo__heading-input" name="taskTodo" type="text" value="{{todo.taskTodo}}">
+                    <button class="todo__content-tools-button--ok" type="submit">ZAPISZ</button>
+                </label>
+            </form>
+        </ul>
+        </div>
+        <div class="go-back">{{> goHome}}</div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
